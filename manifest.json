@@ -1,0 +1,116 @@
+{
+  "toolkit": "research-ai-toolkit",
+  "verified_on": "2026-11-10",
+  "repo": "https://github.com/undyne13b/research-ai-toolkit",
+  "note": "只装 type=skill 与 type=mcp 的项；type=reference 只需阅读或按各自说明单独安装。本项目不含安装脚本。",
+  "items": [
+    {
+      "name": "bioinformatics-god-skill",
+      "repo_url": "https://github.com/zwbao/bioinformatics-god-skill",
+      "type": "skill",
+      "install_method": "git clone 后把整个仓库目录复制进技能目录，目录名 bioinformatics-god-skill，确认 SKILL.md 与 references/ 都在该目录根下；无依赖",
+      "license": "MIT",
+      "requires_secret": false,
+      "verified_on": "2026-11-10"
+    },
+    {
+      "name": "scientific-agent-skills",
+      "repo_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "type": "skill",
+      "install_method": "git clone 后只复制 skills/scientific-visualization、skills/scientific-critical-thinking、skills/cellprofiler 三个目录进技能目录；仓库共 177 个技能，其余不要装；依赖按各 SKILL.md 说明（cellprofiler 需本机 CellProfiler）",
+      "license": "MIT",
+      "requires_secret": false,
+      "verified_on": "2026-11-10"
+    },
+    {
+      "name": "nature-skills",
+      "repo_url": "https://github.com/Yuan1z0825/nature-skills",
+      "type": "skill",
+      "install_method": "git clone 后复制 skills/nature-figure 与 skills/nature-shared 两个完整目录进技能目录（nature-shared 是共享依赖，必须一起装）；不要只复制 SKILL.md",
+      "license": "Apache-2.0",
+      "requires_secret": false,
+      "verified_on": "2026-11-10"
+    },
+    {
+      "name": "anti-defensive-writing-skill",
+      "repo_url": "https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill",
+      "type": "skill",
+      "install_method": "git clone 后复制 skills/anti-defensive-writing（中文版）进技能目录；英文版 skills/anti-defensive-writing-en 不装；零依赖",
+      "license": "MIT",
+      "requires_secret": false,
+      "verified_on": "2026-11-10"
+    },
+    {
+      "name": "research-paper-daily-push",
+      "repo_url": "https://github.com/caofan85-lab/research-paper-daily-push",
+      "type": "skill",
+      "install_method": "git clone 后 python -m pip install -r requirements.txt（Python 3.10+，用 pypdf）；按 references/installation_guide.md 完成研究画像配置；推送凭据由用户自己填写，智能体不得代填或写入文件",
+      "license": "MIT",
+      "requires_secret": true,
+      "verified_on": "2026-11-10"
+    },
+    {
+      "name": "illustrator-mcp-server",
+      "repo_url": "https://github.com/ie3jp/illustrator-mcp-server",
+      "type": "mcp",
+      "install_method": "MCP 配置项：command 用 npx，args 为 illustrator-mcp-server；前置为本机已装 Adobe Illustrator CC2024+ 与 Node.js 20+",
+      "license": "MIT",
+      "requires_secret": false,
+      "verified_on": "2026-11-10"
+    },
+    {
+      "name": "Fiji_imageJ_mcp",
+      "repo_url": "https://github.com/surajinacademia/Fiji_imageJ_mcp",
+      "type": "mcp",
+      "install_method": "python -m pip install fiji-mcp-server==0.2.0；MCP 配置 stdio 启动 fiji-mcp-server，环境变量 FIJI_PATH 指向本机 Fiji 根目录（其中须直接含 jars/ 与 plugins/），FIJI_MODE=headless；不改动 Fiji 安装目录",
+      "license": "BSD-3-Clause",
+      "requires_secret": false,
+      "verified_on": "2026-11-10"
+    },
+    {
+      "name": "scientific-illustrator",
+      "repo_url": "https://github.com/icebird1998/scientific-illustrator",
+      "type": "mcp",
+      "install_method": "Codex 插件（内含 MCP）：git clone 后 codex plugin marketplace add <本地路径>，再 codex plugin add scientific-illustrator@scientific-illustrator-tools，装完重启 Codex；前置为本机已装 PowerPoint 或 WPS 演示或 draw.io Desktop",
+      "license": "MIT",
+      "requires_secret": false,
+      "verified_on": "2026-11-10"
+    },
+    {
+      "name": "scientific-visualization-book",
+      "repo_url": "https://github.com/rougier/scientific-visualization-book",
+      "type": "reference",
+      "install_method": "不安装：git clone 或在线阅读，示例代码在 code/ 下",
+      "license": "代码 BSD-2-Clause；书 CC BY-NC-SA 4.0",
+      "requires_secret": false,
+      "verified_on": "2026-11-10"
+    },
+    {
+      "name": "SciencePlots",
+      "repo_url": "https://github.com/garrettj403/SciencePlots",
+      "type": "reference",
+      "install_method": "pip install SciencePlots；使用 latex 系列样式需本机已装 LaTeX",
+      "license": "MIT",
+      "requires_secret": false,
+      "verified_on": "2026-11-10"
+    },
+    {
+      "name": "ggsci",
+      "repo_url": "https://github.com/nanxstats/ggsci",
+      "type": "reference",
+      "install_method": "R 中执行 install.packages(\"ggsci\")",
+      "license": "GPL-3.0",
+      "requires_secret": false,
+      "verified_on": "2026-11-10"
+    },
+    {
+      "name": "figures4papers",
+      "repo_url": "https://github.com/ChenLiu-1996/figures4papers",
+      "type": "reference",
+      "install_method": "不安装：git clone 后参考 figure_*/ 下的绘图脚本自行改写",
+      "license": "CC BY-NC 4.0",
+      "requires_secret": false,
+      "verified_on": "2026-11-10"
+    }
+  ]
+}
